@@ -1,0 +1,92 @@
+<!-- 悬浮层 -->
+<div class="brandstory_menu star_menu">
+    <ul>
+        <li>
+            <a href="">迈克尔·菲尔普斯</a>
+        </li>
+        <li>
+            <a href="">斯蒂芬·库里</a>
+        </li>
+        <li>
+            <a href="">乔治·圣·皮耶</a>
+        </li>
+    </ul>
+    <div class="brandstory_btn">
+        <a href="javascript:;" class="brandstory_top_btn"></a>
+        <a href="javascript:;" class="brandstory_bottom_btn"></a>
+    </div>
+</div>
+<!-- 悬浮层js -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".mobile-middle-menu ul li").mobile_middle_menu();
+
+        /*brandstory*/
+        var floor = 0;
+        var documffset = 0;
+
+        function arrHeight(obj, len) {
+            var sum = 0;
+            for (var j = 0; j <= len; j++) {
+                sum += obj.eq(j).height();
+            }
+            return sum;
+        }
+
+        function liTxt(n, arr, arr1) {
+            if (n < arr.length - 2) {
+                $(".star_menu li a").eq(0).text(arr[n]);
+                $(".star_menu li a").eq(0).attr("href", "" + arr1[n]);
+                $(".star_menu li a").eq(1).text(arr[n + 1]);
+                $(".star_menu li a").eq(1).attr("href", "" + arr1[n + 1]);
+                $(".star_menu li a").eq(2).text(arr[n + 2]);
+                $(".star_menu li a").eq(2).attr("href", "" + arr1[n + 2]);
+            }
+        }
+
+        var aDiv = $(".brandstory-pic");
+        var arrli = ["迈克尔·菲尔普斯", "斯蒂芬·库里", "乔治·圣·皮耶", "米斯蒂·克普兰德", "乔丹·斯皮思", "琳赛·沃恩", "布兰顿·詹宁斯", "卡梅隆·牛顿", "斯隆·斯蒂文斯", "汤姆·布雷迪", "阿尔瓦雷兹", "托特纳姆热刺队"];
+        var arrlihref = ["/brand/armourvents.htm", "/brand/stephencurry.htm", "/brand/gsp.htm", "/brand/misty.htm", "/brand/jordanspieth.htm", "/brand/lindsey.htm", "/brand/jennings.htm", "/brand/camnewton.htm", "/brand/sloane.htm", "/brand/tombrady.htm", "/brand/caneloalvarez.htm", "/brand/tottenham.htm"];
+
+
+        $(window).scroll(function(event) {
+            var oh = $(document).scrollTop();
+            $(".brandstory_menu").stop().animate({
+                top: oh + 200
+            }, 500);
+
+            for (var i = 0; i < aDiv.length - 1; i++) {
+                if (oh > arrHeight(aDiv, i - 1) && oh < arrHeight(aDiv, i)) {
+                    floor = i;
+                }
+            }
+            liTxt(floor, arrli, arrlihref);
+        });
+
+        $(".brandstory_bottom_btn").click(function(event) {
+            floor++;
+            if (floor <= parseInt(aDiv.length - 1)) {
+                var of = aDiv.eq(floor).offset().top;
+                $("html,body").animate({
+                    scrollTop: of - 60
+                }, 500);
+            } else {
+                floor = parseInt(aDiv.length - 1);
+            }
+            liTxt(floor, arrli, arrlihref);
+        });
+        $(".brandstory_top_btn").click(function(event) {
+            floor--;
+            if (floor >= 0) {
+                var od = aDiv.eq(floor).offset().top;
+                $("html,body").animate({
+                    scrollTop: od - 60
+                }, 500);
+            } else {
+                floor = 0;
+            }
+            liTxt(floor, arrli, arrlihref);
+        });
+        /*brandstory*/
+    });
+</script>

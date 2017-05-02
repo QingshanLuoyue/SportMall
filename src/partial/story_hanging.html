@@ -1,0 +1,80 @@
+<!-- 悬浮层 -->
+<div class="brandstory_menu">
+    <ul>
+        <li>
+            <a href="">关于品牌</a>
+        </li>
+        <li>
+            <a href="">装备系列</a>
+        </li>
+        <li>
+            <a href="">创新科技</a>
+        </li>
+        <li>
+            <a href="">运动明星</a>
+        </li>
+    </ul>
+    <div class="brandstory_btn">
+        <a href="javascript:;" class="brandstory_top_btn"></a>
+        <a href="javascript:;" class="brandstory_bottom_btn"></a>
+    </div>
+</div>
+<!-- 悬浮层js -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".mobile-middle-menu ul li").mobile_middle_menu();
+
+        /*brandstory*/
+        var floor = 0;
+        var documffset = 0;
+
+        function arrHeight(obj, len) {
+            var sum = 0;
+            for (var j = 0; j <= len; j++) {
+                sum += obj.eq(j).height();
+            }
+            return sum;
+        }
+        var aDiv = $(".brandstory-pic");
+
+        $(window).scroll(function(event) {
+            var oh = $(document).scrollTop();
+            $(".brandstory_menu").stop().animate({
+                top: oh + 200
+            }, 500);
+
+            for (var i = 0; i < aDiv.length - 1; i++) {
+                if (oh > arrHeight(aDiv, i - 1) && oh < arrHeight(aDiv, i)) {
+                    floor = i;
+                }
+            }
+        });
+
+        $(".brandstory_bottom_btn").click(function(event) {
+            floor++;
+            //     console.log(floor);
+            if (floor <= parseInt(aDiv.length - 1)) {
+                var of = aDiv.eq(floor).offset().top;
+                $("html,body").animate({
+                    scrollTop: of - 60
+                }, 500);
+            } else {
+                floor = parseInt(aDiv.length - 1);
+            }
+        });
+        $(".brandstory_top_btn").click(function(event) {
+            floor--;
+            //     console.log(floor);
+            if (floor >= 0) {
+                var od = aDiv.eq(floor).offset().top;
+                $("html,body").animate({
+                    scrollTop: od - 60
+                }, 500);
+            } else {
+                floor = 0;
+            }
+        });
+        /*brandstory*/
+
+    });
+</script>

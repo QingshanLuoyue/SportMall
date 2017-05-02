@@ -1,0 +1,334 @@
+@charset "utf-8";
+.question-content{
+  width: 100%;
+  height: auto;
+  max-width: 1600px;
+  margin: 0px auto;
+  padding: 0px 0px 30px 0px;
+}
+.question-l{
+  float: left;
+  width: 15.54%;
+}
+.question-wrap{
+  float: right;
+  width: 80.67%;
+}
+.question-type{
+  width: 92.5%;
+  margin: 84px auto auto auto;
+  clear: both;
+  padding-bottom: 80px;
+  padding-bottom: 30px;
+}
+.question-type h1{
+  font-size: 24px;
+  font-family: 'Microsoft YaHei';
+  color: #4a4a4a;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.question-tabs li{
+  line-height: 38px;
+  border-bottom: 1px solid #1d1d1d;
+  text-indent: 18px;
+}
+.question-tabs li:first-child {
+  border-top: 1px solid #1d1d1d;
+}
+.question-tabs li.cur{
+  background: #f0f0ee;
+}
+.question-tabs li a{
+  display: block;
+  height: 80%;
+  font-size: 16px;
+  color: #4a4a4a;
+  font-weight: 100;
+  font-family: "Microsoft YaHei";
+}
+.question-tabs li.cur a {
+    background: #F0F0EE none repeat scroll 0% 0%;
+    font-weight: bold;
+}
+.question-item{
+border-bottom: 1px solid #ccc;
+padding: 10px 0px 15px;
+padding: 1px 0px 15px;
+}
+#zhuce .question-list h2,
+#wenti .question-list h2{border-bottom: 1px dashed #7F7F7F;padding: 0px 0px 15px 0px;margin: 0px 0px 5px 0px;}
+.question-list h2{
+  font-size: 24px;
+  color: #4a4a4a;
+  font-family: 'microsoft yahei';
+  font-weight: normal;
+}
+.question-list h3{
+  font-size: 16px;
+  border-top: #7f7f7f 1px dashed;
+  line-height: 30px;
+  padding-top: 5px;
+  margin-top: 15px;
+  margin-top: 29px;
+}
+.question-list li{
+  margin-bottom: 35px;
+  margin-bottom: 13px;
+}
+.question-list li a span{
+  line-height: 28px;
+  font-size: 14px;
+}
+.question-list dd{
+  font-size: 12px;
+  line-height: 24px;
+}
+.showmore{
+  text-align: right;
+  font-size: 12px;
+  color: #e70033;
+  cursor: pointer;
+}
+.hidemore{
+  text-align: right;
+  font-size: 12px;
+  color: #e70033;
+  cursor: pointer;
+  display: none;
+}
+.li-hide{
+  display: none;
+}
+.left-customer{ 
+  padding-top:44px;
+  word-wrap:break-word;
+}
+
+.left-customer b{
+  font-size:12px;
+  color:#4a4a4a;
+  line-height:18px;
+}
+.left-customer dt{
+  margin-top:19px;
+}
+.left-customer dt,
+.left-customer dd{  
+  font-size:12px;
+  line-height:18px;
+}
+/*常见问题end*/
+/*联系我们*/
+.contact-content{
+  width: 100%;
+  height: auto;
+  max-width: 1600px;
+  margin: 0px auto;
+  padding: 0px 0px 30px 0px;
+}
+.contact-wrap{
+  width: 70%;
+  margin: 0 auto;
+  padding: 80px 10px 0 10px;
+}
+.contact-wrap h1{
+  font-size: 24px;
+  font-family: 'microsoft yahei';
+  font-weight: normal;
+  line-height: 60px;
+  border-bottom: #7f7f7f 1px dashed;
+  margin-bottom: 10px;
+}
+.contact-wrap p{
+  font-size: 14px;
+  line-height: 24px;
+  color: #acacac;
+  font-weight: 100;
+}
+.way-list{
+  margin-top: 70px;
+}
+.way-list li{
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #4a4a4a;
+  padding-left: 25px;
+  background: url(../images/help/contact-ico.png) no-repeat;
+}
+.way-list li a{
+  color: #e70033;
+}
+.way-list li.tel {
+    background-position: 0px 1px;
+}
+.way-list li.message{
+  background-position: 0 -45px;
+}
+.way-list li.mail{
+  background-position: 0 -94px ;
+}
+.way-list li.message{ padding-left: 20px;}
+.way-list li.message_offline {
+    display: none;
+    background: transparent url("../images/help/contact-ico-1.png") no-repeat scroll 0% 0%;
+}
+/*联系我们end*/
+
+.question-tabs li:hover a{
+	color: #e70033 !important;
+	text-decoration: underline !important;	
+}
+
+@media screen and (max-width: 1024px){
+	.question-wrap {
+	width: 74%;
+	}
+	.question-l {
+	width: 22%;
+	}
+	
+}	
+@media screen and (max-width: 767px){
+    .question-content{font-family: "SimHei","黑体"}
+    .question-type{margin-top: 20px;}
+    .tab-none,
+    .showmore,
+    .hidemore,
+    .left-customer{
+      display: none;
+    }
+    .li-hide{
+        display: block;
+      }
+    .question-l{
+        float: none;
+        width: 100%;
+      }
+    .question-content .question-l h1{
+      font-size: 16px;
+      font-family: "SimHei","黑体";
+      font-weight: bold;
+      padding-bottom: 3px;
+    }
+      .question-wrap{
+        float: none;
+        width: 100%;
+      }
+    .question-content{
+      margin: 30px 0 0 0;
+    }
+    .question-tabs li{
+      /*width: 25%;*/
+      float: left;
+      cursor: pointer;
+      font-size: 14px;
+      text-align: center;
+      margin-right: 0px;
+      padding-top: 14px;
+      border-bottom: none;
+      text-indent: 0;
+      line-height: 24px;
+      /*padding: 0 2px;*/
+    }
+    .question-tabs .qli1{width: 30%}
+    .question-tabs .qli2{width: 20%}
+    .question-tabs .qli3{width: 20%}
+    .question-tabs .qli4{width: 30%}
+    .question-tabs li.cur{
+      color: #e70033;
+      border-bottom: #e70033 2px solid;
+      border-bottom: #e70033 3px solid;
+      background: none;
+    }
+    .question-tabs .cur a{
+      color: #e70033;
+    }
+    .question-tabs li a{
+      font-size: 12px;
+      font-weight: normal;
+    }
+    .question-tabs li:first-child {
+        border-top: none;
+      }
+    .question-content h1{
+      display: block;
+      border-bottom: #7f7f7f 1px dashed;
+      text-align: center;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 35px;
+      margin-bottom: 5px;
+    }
+    .question-list h2{
+      font-size: 14px;
+      margin: 15px 0;
+    }
+    .question-list h3{
+      /* color: #cacaca; */
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 32px;
+      border-top: none;
+    }
+    .question-list ul{
+      border-top: #7f7f7f 1px dashed;
+    }
+    .question-list li{
+      font-size: 13px;
+      line-height: 28px;
+      border-bottom: #7f7f7f 1px dashed;
+      margin-bottom: 0px;
+    }
+    .question-list li dl{
+      display: none;
+      font-size: 12px;
+      font-family: "SimHei";
+      line-height: 18px;
+    }
+    .question-list li span{
+      background: url(../images/help/plus-border.jpg) no-repeat;
+      background-size: 12px;
+      padding-left: 20px;
+    }
+    /*联系我们*/
+    .contact-wrap{
+      width: 100%;
+      padding-top: 20px;
+    }
+    .contact-wrap h1{
+      text-align: center;
+      font-size: 16px;
+      line-height: 16px;
+      padding: 10px 0 8px 0;
+      font-weight: bold;
+      font-family:  "SimHei","黑体";
+      margin-bottom: 16px;
+    }
+    .contact-wrap p{
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 14px;
+    }
+    .way-list{
+      margin-top: 40px;
+    }
+    /*联系我们end*/
+    
+    .question-tabs li:hover a{
+		text-decoration: none !important;	
+	}
+	
+	.question-tabs li.cur a { font-weight: bold; background:none;}
+	.question-list h3 { margin-top: 0px;}
+	#zhuce .question-list h2, #wenti .question-list h2 {margin: 15px 0px;border-bottom: 0px dashed #7F7F7F;}
+	.question-item { border-bottom: 0px solid #CCC;}
+	
+	.way-list li.message{ padding-left: 22px;}
+	.way-list li.message a img{  width: 105px;}
+    .way-list li.tel { background-position: 0px 1px;}
+    .way-list li.mail { background-position: 0 -94px;}
+    .way-list li { margin-bottom: 20px;}
+    
+    
+}

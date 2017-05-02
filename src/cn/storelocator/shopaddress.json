@@ -1,0 +1,50 @@
+ [
+	{
+		"name": "上海 - 港汇店",
+		"engName": "Shanghai Gateway",
+		"detailsAddress": "上海市徐汇区虹桥路1号B1楼名店运动城",
+		"engDistrict": "Xuhui District, Shanghai, PRC",
+		"engdetailsDistrict": "Grand Gateway Mall-Sport City,1 Hongqiao Road,",
+		"tel": "电话/Tel: +86 021-64471022",
+		"time": "营业时间/Hours: 10:00-22:00",
+		"imgUrl": "http://localhost/SportMall/src/images/storeImage/1.jpg",
+		"longitude": "116.331398",
+		"latitude": "39.897445"
+	},
+	{
+		"name": "上海 - 嘉里中心店",
+		"engName": "Shanghai Kerry Centre",
+		"detailsAddress": "上海市南京西路1551号嘉里中心N4-21号店铺",
+		"engDistrict": "Jingan District, Shanghai, PRC",
+		"engdetailsDistrict": "Kerry Centre North Tower 4/F No.21, No.1551 Nanjing Xi Road,",
+		"tel": "电话/Tel:+86 021-23135673",
+		"time": "营业时间/Hours：10:00-22:00",
+		"imgUrl": "http://localhost/SportMall/src/images/storeImage/2.jpg",
+		"longitude": "116.331398",
+		"latitude": "39.897445"
+	},
+	{
+		"name": "上海 - 百联又一城店",
+		"engName": "Shanghai Gateway",
+		"detailsAddress": "上海市徐汇区虹桥路1号B1楼名店运动城",
+		"engDistrict": "Xuhui District, Shanghai, PRC",
+		"engdetailsDistrict": "Grand Gateway Mall-Sport City,1 Hongqiao Road,",
+		"tel": "电话/Tel: +86 021-64471022",
+		"time": "营业时间/Hours: 10:00-22:00",
+		"imgUrl": "http://localhost/SportMall/src/images/storeImage/3.jpg",
+		"longitude": "116.331398",
+		"latitude": "39.897445"
+	},
+	{
+		"name": "上海 - 港汇店",
+		"engName": "Shanghai Gateway",
+		"detailsAddress": "上海市徐汇区虹桥路1号B1楼名店运动城",
+		"engDistrict": "Xuhui District, Shanghai, PRC",
+		"engdetailsDistrict": "Grand Gateway Mall-Sport City,1 Hongqiao Road,",
+		"tel": "电话/Tel: +86 021-64471022",
+		"time": "营业时间/Hours: 10:00-22:00",
+		"imgUrl": "http://localhost/SportMall/src/images/storeImage/4.jpg",
+		"longitude": "116.331398",
+		"latitude": "39.897445"
+	}
+]

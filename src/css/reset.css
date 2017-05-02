@@ -1,0 +1,98 @@
+@charset "utf-8";
+/*** Reset ***/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+blockquote,q { quotes: none; }
+blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none; }
+:focus { outline: 0; }
+ul,li{list-style:none; padding:0;}
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+a{ color:#4a4a4a; text-decoration:none;}
+a:hover{ text-decoration:none;}
+input{ color:#4a4a4a; font-size:12px;background: #fff;}
+::-webkit-input-placeholder {color:#4a4a4a; /* WebKit browsers */}
+:-moz-placeholder {color:#4a4a4a; /* Mozilla Firefox 4 to 18 */}
+::-moz-placeholder {color:#4a4a4a; /* Mozilla Firefox 19+ */}
+:-ms-input-placeholder {color:#4a4a4a; /* Internet Explorer 10+ */}
+/*** Clearfix ***/
+/* CLEAR FIXA8D02E*/
+.clearfix:after { content: ""; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height:1%;}
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.ui-body-c{ text-shadow:none;}
+.clear{ *zoom:1; clear:both;}
+.clear:after{ display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden;}
+/* CSS Document */
+html,body{ margin: 0; padding: 0; height:100%; -webkit-text-size-adjust:none;}
+a{margin: 0; padding: 0;}
+a:hover,a:focus{outline:none;}
+img { border: medium none; height: auto; margin: 0; padding: 0;}
+body{margin:0px;padding:0px;background-size:100%; background:#FFF; color: #4a4a4a; font-family:"sans serif", "serif","Arial","Simsun";}
+body img{ max-width:100%; vertical-align:middle; display:inline-block;}
+
+input::-webkit-input-placeholder {color: #B8B8B8 !important; /* WebKit browsers */}
+input:-moz-placeholder {color: #B8B8B8 !important; /* Mozilla Firefox 4 to 18 */}
+input::-moz-placeholder {color: #B8B8B8 !important; /* Mozilla Firefox 19+ */}
+input:-ms-input-placeholder {color: #B8B8B8 !important; /* Internet Explorer 10+ */}
+
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset;}
+
+@font-face {
+    font-family: 'armourxbold';
+    src: url('fonts/armour_xbd-webfont.eot');
+    src: url('fonts/armour_xbd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/armour_xbd-webfont.woff2') format('woff2'),
+         url('fonts/armour_xbd-webfont.woff') format('woff'),
+         url('fonts/armour_xbd-webfont.ttf') format('truetype'),
+         url('fonts/armour_xbd-webfont.svg#armourxbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'armourregular';
+    src: url('fonts/armour_rg-webfont.eot');
+    src: url('fonts/armour_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/armour_rg-webfont.woff2') format('woff2'),
+         url('fonts/armour_rg-webfont.woff') format('woff'),
+         url('fonts/armour_rg-webfont.ttf') format('truetype'),
+         url('fonts/armour_rg-webfont.svg#armourregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'armourbold';
+    src: url('fonts/armour_bd-webfont.eot');
+    src: url('fonts/armour_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/armour_bd-webfont.woff2') format('woff2'),
+         url('fonts/armour_bd-webfont.woff') format('woff'),
+         url('fonts/armour_bd-webfont.ttf') format('truetype'),
+         url('fonts/armour_bd-webfont.svg#armourbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'armourmedium';
+    src: url('fonts/armour_md-webfont.eot');
+    src: url('fonts/armour_md-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/armour_md-webfont.woff2') format('woff2'),
+         url('fonts/armour_md-webfont.woff') format('woff'),
+         url('fonts/armour_md-webfont.ttf') format('truetype'),
+         url('fonts/armour_md-webfont.svg#armourmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media(max-width:767px){
+	body{font-family: "sans serif", "serif", "SimHei";}
+	
+	iframe.survey {
+		width: 100%;
+		padding-top: 25px;
+	}
+}

@@ -1,0 +1,62 @@
+[
+	{
+		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+		"hiddenImgUrls": [
+			{
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+				"color": "#BD1B34"
+			},
+			{
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png",
+				"color": "#7F7E78"
+			}
+		],
+		"productText": "男子UA Curry 3篮球鞋",
+		"productMoney": "￥1299.00"
+	},
+	{
+		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+		"hiddenImgUrls": [
+			{
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+				"color": "#BD1B34"
+			},
+			{
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png",
+				"color": "#7F7E78"
+			}
+		],
+		"productText": "男子UA Curry 3篮球鞋",
+		"productMoney": "￥1299.00"
+	},
+	{
+		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+		"hiddenImgUrls": [
+			{
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+				"color": "#BD1B34"
+			},
+			{
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png",
+				"color": "#7F7E78"
+			}
+		],
+		"productText": "男子UA Curry 3篮球鞋",
+		"productMoney": "￥1299.00"
+	},
+	{
+		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+		"hiddenImgUrls": [
+			{
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+				"color": "#BD1B34"
+			},
+			{
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png",
+				"color": "#7F7E78"
+			}
+		],
+		"productText": "男子UA Curry 3篮球鞋",
+		"productMoney": "￥1299.00"
+	}
+]
