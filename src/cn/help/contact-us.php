@@ -23,8 +23,9 @@
     <title>联系我们 - Under Armour 官方购物网站</title>
     <link rel="stylesheet" type="text/css" href="http://localhost/SportMall/src/css/index9210.css">
     <link href="http://localhost/SportMall/src/css/help.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost/SportMall/src/css/help-new.css" rel="stylesheet" type="text/css">
 
-    <script src="http://localhost/SportMall/src/scripts/index758e.js"></script>
+    <script src="http://localhost/SportMall/src/scripts/index.js"></script>
     <script src="http://localhost/SportMall/src/scripts/help.js"></script>
 </head>
 
