@@ -27,14 +27,15 @@ $(function(){
 						str += '<li class="product-list-li">\
 	                                <a class="product-img">\
 	                                    <span>\
-											<img class="positive-img first" alt="" id="" src="'+ data[i].defaultImgUrl +'" />\
+                                            <img class="positive-img first" alt="" id="" src="'+ data[i].defaultImgUrl +'" />\
+											<img class="positive-img first rotateimg" alt="" id="" hidden_url="'+ data[i].defaultImgUrl +'" />\
 										</span>\
 	                                </a>\
 	                                <div class="product-content">\
-	                                    <ul class="color-list-small clear" style="display:none;">'
+	                                    <ul class="color-list-small clear">'
 	                                    	for (var j in data[i].hiddenImgUrls) {
 		                                        str += '<li class="color-item  '+ (j == 0 ? 'active' : '')  +'">\
-				                                            <img hidden_url="'+ data[i].hiddenImgUrls[j].imgUrl +'" class="imgUrl2" style="display: none;" />\
+				                                            <img hidden_url="'+ data[i].hiddenImgUrls[j].imgUrl +'" class="imgUrl2" />\
 				                                            <a style="background-color: '+ data[i].hiddenImgUrls[j].color +'" href="javascript:void(0);"></a>\
 				                                        </li>'
 	                                    	}
@@ -68,9 +69,13 @@ $(function(){
             // hover事件
             $(this).find('.color-item').hover(function(){
                 var hidden_url = $(this).find('img').attr('hidden_url')
-                self.find('.positive-img.first').attr('src',hidden_url)
+                // 隐藏第一个显示图片
+                self.find('.positive-img.first').eq(0).hide(0);
+                // 设置翻转图片路径
+                self.find('.positive-img.rotateimg').attr('src',hidden_url).show(0).addClass('rotateback')
             },function(){
-                self.find('.positive-img.first').attr('src',tempImgUrl)
+                self.find('.positive-img.first').eq(0).show(0)
+                self.find('.positive-img.rotateimg').removeAttr('src').hide(0).removeClass('rotateback')
             })
             // 点击事件
             // 设计ajax重复绑定，因此这里做了去除事件处理

@@ -95,19 +95,36 @@
                     <div class="grid">
                         <ul class="product-list clear" id="productList">
                             <li class="product-list-li">
+                                <style>
+                                    .positive-img.rotateimg {
+                                        display: none;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        transition: all .3s linear;
+                                        transform: rotateY(180deg);
+                                    }
+                                    .positive-img.rotateback {
+                                        transform: rotateY(0);
+                                    }
+                                    .imgUrl2 {
+                                        display: none;
+                                    }
+                                </style>
                                 <a class="product-img">
                                     <span>
-										<img class="positive-img first" alt="" id="" src="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" hidden_url=""/>
-									</span>
+                                        <img class="positive-img first" alt="" id="" src="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" hidden_url=""/>
+                                        <img class="positive-img first rotateimg" alt="" hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png"/>
+                                    </span>
                                 </a>
                                 <div class="product-content">
-                                    <ul class="color-list-small clear" style="display:none;">
+                                    <ul class="color-list-small clear">
                                         <li class="color-item  active">
-                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" class="imgUrl2" style="display: none;" />
+                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" class="imgUrl2" />
                                             <a style="background-color: #BD1B34;" href="javascript:void(0);"></a>
                                         </li>
                                         <li class="color-item">
-                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png" class="imgUrl2" style="display: none;" />
+                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png" class="imgUrl2" />
                                             <a style="background-color: #7F7E78;" href="javascript:void(0);"></a>
                                         </li>
                                     </ul>
@@ -125,16 +142,17 @@
                                 <a class="product-img">
                                     <span>
                                         <img class="positive-img first" alt="" id="" src="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" hidden_url=""/>
+                                        <img class="positive-img first rotateimg" alt="" id="" hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png"/>
                                     </span>
                                 </a>
                                 <div class="product-content">
-                                    <ul class="color-list-small clear" style="display:none;">
+                                    <ul class="color-list-small clear">
                                         <li class="color-item  active">
-                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" class="imgUrl2" style="display: none;" />
+                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" class="imgUrl2" />
                                             <a style="background-color: #BD1B34;" href="javascript:void(0);"></a>
                                         </li>
                                         <li class="color-item">
-                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png" class="imgUrl2" style="display: none;" />
+                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png" class="imgUrl2"/>
                                             <a style="background-color: #7F7E78;" href="javascript:void(0);"></a>
                                         </li>
                                     </ul>
@@ -152,16 +170,17 @@
                                 <a class="product-img">
                                     <span>
                                         <img class="positive-img first" alt="" id="" src="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" hidden_url=""/>
+                                        <img class="positive-img first rotateimg" alt="" id="" hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png"/>
                                     </span>
                                 </a>
                                 <div class="product-content">
-                                    <ul class="color-list-small clear" style="display:none;">
+                                    <ul class="color-list-small clear">
                                         <li class="color-item  active">
-                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" class="imgUrl2" style="display: none;" />
+                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" class="imgUrl2" />
                                             <a style="background-color: #BD1B34;" href="javascript:void(0);"></a>
                                         </li>
                                         <li class="color-item">
-                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png" class="imgUrl2" style="display: none;" />
+                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png" class="imgUrl2"/>
                                             <a style="background-color: #7F7E78;" href="javascript:void(0);"></a>
                                         </li>
                                     </ul>
@@ -179,16 +198,17 @@
                                 <a class="product-img">
                                     <span>
                                         <img class="positive-img first" alt="" id="" src="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" hidden_url=""/>
+                                        <img class="positive-img first rotateimg" alt="" id="" hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png"/>
                                     </span>
                                 </a>
                                 <div class="product-content">
-                                    <ul class="color-list-small clear" style="display:none;">
+                                    <ul class="color-list-small clear">
                                         <li class="color-item  active">
-                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" class="imgUrl2" style="display: none;" />
+                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png" class="imgUrl2"/>
                                             <a style="background-color: #BD1B34;" href="javascript:void(0);"></a>
                                         </li>
                                         <li class="color-item">
-                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png" class="imgUrl2" style="display: none;" />
+                                            <img hidden_url="http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png" class="imgUrl2"/>
                                             <a style="background-color: #7F7E78;" href="javascript:void(0);"></a>
                                         </li>
                                     </ul>
