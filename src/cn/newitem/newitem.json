@@ -1,13 +1,16 @@
 [
 	{
-		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/red.jpg",
+		"defaultImgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/red-back.jpg",
 		"hiddenImgUrls": [
 			{
-				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/red.jpg",
+				"imgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/red-back.jpg",
 				"color": "#BD1B34"
 			},
 			{
-				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png",
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/blue.jpg",
+				"imgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/blue-back.jpg",
 				"color": "#7F7E78"
 			}
 		],
@@ -15,14 +18,17 @@
 		"productMoney": "￥1299.00"
 	},
 	{
-		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/red.jpg",
+		"defaultImgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/red-back.jpg",
 		"hiddenImgUrls": [
 			{
-				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/red.jpg",
+				"imgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/red-back.jpg",
 				"color": "#BD1B34"
 			},
 			{
-				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png",
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/blue.jpg",
+				"imgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/blue-back.jpg",
 				"color": "#7F7E78"
 			}
 		],
@@ -30,14 +36,17 @@
 		"productMoney": "￥1299.00"
 	},
 	{
-		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/red.jpg",
+		"defaultImgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/red-back.jpg",
 		"hiddenImgUrls": [
 			{
-				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/red.jpg",
+				"imgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/red-back.jpg",
 				"color": "#BD1B34"
 			},
 			{
-				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png",
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/blue.jpg",
+				"imgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/blue-back.jpg",
 				"color": "#7F7E78"
 			}
 		],
@@ -45,14 +54,17 @@
 		"productMoney": "￥1299.00"
 	},
 	{
-		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+		"defaultImgUrl": "http://localhost/SportMall/src/images/new-list/newitem/red.jpg",
+		"defaultImgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/red-back.jpg",
 		"hiddenImgUrls": [
 			{
-				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie1_320X390.png",
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/red.jpg",
+				"imgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/red-back.jpg",
 				"color": "#BD1B34"
 			},
 			{
-				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/xie2_320X390.png",
+				"imgUrl": "http://localhost/SportMall/src/images/new-list/newitem/blue.jpg",
+				"imgUrlBack": "http://localhost/SportMall/src/images/new-list/newitem/blue-back.jpg",
 				"color": "#7F7E78"
 			}
 		],

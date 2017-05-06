@@ -27,15 +27,16 @@ $(function(){
 						str += '<li class="product-list-li">\
 	                                <a class="product-img">\
 	                                    <span>\
-                                            <img class="positive-img first" alt="" id="" src="'+ data[i].defaultImgUrl +'" />\
-											<img class="positive-img first rotateimg" alt="" id="" hidden_url="'+ data[i].defaultImgUrl +'" />\
+                                            <img class="positive-img first blockhook1" alt="" id="" src="'+ data[i].defaultImgUrl +'" hidden_url="'+ data[i].defaultImgUrl +'" />\
+											<img class="imgUrl2 blockhook2" alt="" id="" hidden_url="'+ data[i].defaultImgUrlBack +'" />\
 										</span>\
 	                                </a>\
 	                                <div class="product-content">\
 	                                    <ul class="color-list-small clear">'
 	                                    	for (var j in data[i].hiddenImgUrls) {
 		                                        str += '<li class="color-item  '+ (j == 0 ? 'active' : '')  +'">\
-				                                            <img hidden_url="'+ data[i].hiddenImgUrls[j].imgUrl +'" class="imgUrl2" />\
+                                                            <img hidden_url="'+ data[i].hiddenImgUrls[j].imgUrl +'" class="imgUrl2 imghook1" />\
+				                                            <img hidden_url="'+ data[i].hiddenImgUrls[j].imgUrlBack +'" class="imgUrl2 imghook2" />\
 				                                            <a style="background-color: '+ data[i].hiddenImgUrls[j].color +'" href="javascript:void(0);"></a>\
 				                                        </li>'
 	                                    	}
@@ -68,25 +69,30 @@ $(function(){
             var tempImgUrl = $(this).find('.positive-img.first').attr('src')
             // hover事件
             $(this).find('.color-item').hover(function(){
-                var hidden_url = $(this).find('img').attr('hidden_url')
+                $(this).addClass('active').siblings().removeClass('active')
+                var hidden_url1 = $(this).find('.imghook1').attr('hidden_url')
+                var hidden_url2 = $(this).find('.imghook2').attr('hidden_url')
                 // 隐藏第一个显示图片
-                self.find('.positive-img.first').eq(0).hide(0);
-                // 设置翻转图片路径
-                self.find('.positive-img.rotateimg').attr('src',hidden_url).show(0).addClass('rotateback')
-            },function(){
-                self.find('.positive-img.first').eq(0).show(0)
-                self.find('.positive-img.rotateimg').removeAttr('src').hide(0).removeClass('rotateback')
+                self.find('.blockhook1').attr({'src': hidden_url1, 'hidden_url': hidden_url1});
+                self.find('.blockhook2').attr('hidden_url', hidden_url2);
+            })
+            $(this).find('.blockhook1').hover(function(){
+                var backUrl = $(this).siblings('.blockhook2').attr('hidden_url');
+                $(this).attr('src', backUrl);
+            }, function(){
+                var hidden_url = $(this).attr('hidden_url');
+                $(this).attr('src', hidden_url);
             })
             // 点击事件
             // 设计ajax重复绑定，因此这里做了去除事件处理
-            $(this).find('.color-item').off('click');
-            $(this).find('.color-item').click(function(){
-                console.log(1)
-                $(this).addClass('active').siblings().removeClass('active')
-                var hidden_url = $(this).find('img').attr('hidden_url')
-                tempImgUrl = hidden_url;
-                self.find('.positive-img.first').attr('src',hidden_url)
-            })
+            // $(this).find('.color-item').off('click');
+            // $(this).find('.color-item').click(function(){
+            //     console.log(1)
+            //     $(this).addClass('active').siblings().removeClass('active')
+            //     var hidden_url = $(this).find('img').attr('hidden_url')
+            //     tempImgUrl = hidden_url;
+            //     self.find('.positive-img.first').attr('src',hidden_url)
+            // })
         })
     }imgEvents()
 });
