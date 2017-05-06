@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="http://localhost/SportMall/src/css/index9210.css">
     <link href="http://localhost/SportMall/src/css/help.css" rel="stylesheet" type="text/css">
     <link href="http://localhost/SportMall/src/css/help-new.css" rel="stylesheet" type="text/css">
+    <link href="http://localhost/SportMall/src/css/common-new.css" rel="stylesheet" type="text/css">
 
     <script src="http://localhost/SportMall/src/scripts/index.js"></script>
     <script src="http://localhost/SportMall/src/scripts/help.js"></script>
@@ -69,7 +70,7 @@
         <!-- 头部开始 -->
         <?php include '../../partial/header.html'; ?>
         <!-- 头部结束 -->
-        <div id="content" class="content">
+        <article class="article">
             <div class="contact-content">
                 <div class="contact-wrap">
                     <h1>联系我们</h1>
@@ -88,7 +89,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </article>
         <!-- 底部 -->
         <?php include '../../partial/footer.html'; ?>
     </div>
