@@ -6,11 +6,11 @@ $(function(){
 	var _h = $("#footer").height();
 	$(window).scroll(function(){
 		if(!_tag){
-			// return;
+			return;
 		}
 		var scrollBottom= $(document).height() - $(window).height() - $(window).scrollTop();
 		if(scrollBottom<_h+100){
-			_tag = false;
+			_tag = false;  // 当ajax请求时，开关置为false，等待请求成功
 			if(n > total){
 				$('.list-loading-wrap').hide();
 				return;
@@ -19,9 +19,12 @@ $(function(){
 			$.ajax({
 				url: 'http://localhost/SportMall/src/cn/newitem/newitem.json',
 				type: 'get',
-				dataType: 'text',
 				success: function(res){
-					var data = res && JSON.parse(res);
+					var data = res.data;
+                    if (data == '' || data == null) {
+                        _tag = false;  // 没有数据，置为false，之后都不再请求ajax
+                        return;
+                    }
 					var str = '';
 					for (var i in data) {
 						str += '<li class="product-list-li">\
@@ -54,7 +57,8 @@ $(function(){
 					}
 	                $('#productList').append(str);
                     // 成功加载元素后运行imgEvents绑定函数
-                    imgEvents()
+                    imgEvents();
+                    _tag = true;  // 请求成功，置为true，可以再次请求ajax
 				},
 				error: function() {
 
